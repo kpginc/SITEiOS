@@ -21,6 +21,11 @@
 		274EEE08193F5B75000D411D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274EEDEA193F5B75000D411D /* UIKit.framework */; };
 		274EEE10193F5B75000D411D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 274EEE0E193F5B75000D411D /* InfoPlist.strings */; };
 		274EEE12193F5B75000D411D /* KPGINC_Techsummit2014_SITETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EEE11193F5B75000D411D /* KPGINC_Techsummit2014_SITETests.m */; };
+		274EEE1C193F5B8B000D411D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274EEE1B193F5B8B000D411D /* CoreData.framework */; };
+		274EEE20193F5BD9000D411D /* sitedb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 274EEE1E193F5BD9000D411D /* sitedb.xcdatamodeld */; };
+		274EEE23193F5F00000D411D /* APICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EEE22193F5F00000D411D /* APICall.m */; };
+		274EEE26193F5FC9000D411D /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EEE25193F5FC9000D411D /* DataAccess.m */; };
+		274EEE2A193F600F000D411D /* FIleSystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EEE29193F600F000D411D /* FIleSystemHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		274EEE0D193F5B75000D411D /* KPGINC-Techsummit2014-SITETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KPGINC-Techsummit2014-SITETests-Info.plist"; sourceTree = "<group>"; };
 		274EEE0F193F5B75000D411D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		274EEE11193F5B75000D411D /* KPGINC_Techsummit2014_SITETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPGINC_Techsummit2014_SITETests.m; sourceTree = "<group>"; };
+		274EEE1B193F5B8B000D411D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		274EEE1F193F5BD9000D411D /* sitedb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sitedb.xcdatamodel; sourceTree = "<group>"; };
+		274EEE21193F5F00000D411D /* APICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICall.h; sourceTree = "<group>"; };
+		274EEE22193F5F00000D411D /* APICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICall.m; sourceTree = "<group>"; };
+		274EEE24193F5FC9000D411D /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
+		274EEE25193F5FC9000D411D /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccess.m; sourceTree = "<group>"; };
+		274EEE28193F600F000D411D /* FIleSystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIleSystemHelper.h; sourceTree = "<group>"; };
+		274EEE29193F600F000D411D /* FIleSystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIleSystemHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EEE1C193F5B8B000D411D /* CoreData.framework in Frameworks */,
 				274EEDE9193F5B75000D411D /* CoreGraphics.framework in Frameworks */,
 				274EEDEB193F5B75000D411D /* UIKit.framework in Frameworks */,
 				274EEDE7193F5B75000D411D /* Foundation.framework in Frameworks */,
@@ -101,6 +115,7 @@
 		274EEDE5193F5B75000D411D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				274EEE1B193F5B8B000D411D /* CoreData.framework */,
 				274EEDE6193F5B75000D411D /* Foundation.framework */,
 				274EEDE8193F5B75000D411D /* CoreGraphics.framework */,
 				274EEDEA193F5B75000D411D /* UIKit.framework */,
@@ -112,6 +127,8 @@
 		274EEDEC193F5B75000D411D /* KPGINC-Techsummit2014-SITE */ = {
 			isa = PBXGroup;
 			children = (
+				274EEE27193F5FF4000D411D /* HelperClass */,
+				274EEE1D193F5B99000D411D /* DataAccess */,
 				274EEDF5193F5B75000D411D /* AppDelegate.h */,
 				274EEDF6193F5B75000D411D /* AppDelegate.m */,
 				274EEDF8193F5B75000D411D /* Main.storyboard */,
@@ -150,6 +167,27 @@
 				274EEE0E193F5B75000D411D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		274EEE1D193F5B99000D411D /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				274EEE24193F5FC9000D411D /* DataAccess.h */,
+				274EEE25193F5FC9000D411D /* DataAccess.m */,
+				274EEE1E193F5BD9000D411D /* sitedb.xcdatamodeld */,
+				274EEE21193F5F00000D411D /* APICall.h */,
+				274EEE22193F5F00000D411D /* APICall.m */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		274EEE27193F5FF4000D411D /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				274EEE28193F600F000D411D /* FIleSystemHelper.h */,
+				274EEE29193F600F000D411D /* FIleSystemHelper.m */,
+			);
+			name = HelperClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EEE23193F5F00000D411D /* APICall.m in Sources */,
 				274EEDFD193F5B75000D411D /* ViewController.m in Sources */,
 				274EEDF7193F5B75000D411D /* AppDelegate.m in Sources */,
+				274EEE2A193F600F000D411D /* FIleSystemHelper.m in Sources */,
+				274EEE26193F5FC9000D411D /* DataAccess.m in Sources */,
+				274EEE20193F5BD9000D411D /* sitedb.xcdatamodeld in Sources */,
 				274EEDF3193F5B75000D411D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +510,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		274EEE1E193F5BD9000D411D /* sitedb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				274EEE1F193F5BD9000D411D /* sitedb.xcdatamodel */,
+			);
+			currentVersion = 274EEE1F193F5BD9000D411D /* sitedb.xcdatamodel */;
+			path = sitedb.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 274EEDDB193F5B75000D411D /* Project object */;
 }
