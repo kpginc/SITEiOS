@@ -22,6 +22,26 @@
 
 @implementation TendenciasEducativasViewController
 
+@synthesize PercentMajor1Lbl;
+@synthesize PercentMajor2Lbl;
+@synthesize PercentMajor3Lbl;
+@synthesize PercentMajor4Lbl;
+@synthesize PercentMajor5Lbl;
+@synthesize PercentMajor6Lbl;
+
+@synthesize MajorName1Lbl;
+@synthesize MajorName2Lbl;
+@synthesize MajorName3Lbl;
+@synthesize MajorName4Lbl;
+@synthesize MajorName5Lbl;
+@synthesize MajorName6Lbl;
+
+@synthesize MalePercentageLbl, FemalePercentageLbl;
+@synthesize PuebloLbl;
+@synthesize CampusNameLbl;
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -302,6 +322,45 @@
         NSLog(@"Sorted array ==== %@", sortedArray);
         
         
+        
+        
+        // Add data to view controller
+        for (int i = 0; i <= 6; i++)
+        {
+            NSDictionary *tempD = [sortedArray objectAtIndex:i];
+            
+            PercentMajor1Lbl.text =[NSString stringWithFormat:@"%@ ",[tempD objectForKey:@"percent"]];
+        
+            
+            
+            
+        }
+        
+        
+        NSDictionary *dict1 = [sortedArray objectAtIndex:0];
+        NSDictionary *dict2 = [sortedArray objectAtIndex:1];
+        NSDictionary *dict3 = [sortedArray objectAtIndex:2];
+        NSDictionary *dict4 = [sortedArray objectAtIndex:3];
+        NSDictionary *dict5 = [sortedArray objectAtIndex:4];
+        NSDictionary *dict6 = [sortedArray objectAtIndex:5];
+        
+        
+        PercentMajor1Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        MajorName1Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        
+        PercentMajor2Lbl.text =[NSString stringWithFormat:@"%@ ",[dict2 objectForKey:@"percent"]];
+        MajorName2Lbl.text =[NSString stringWithFormat:@"%@ ",[dict2 objectForKey:@"percent"]];
+        
+        PercentMajor3Lbl.text =[NSString stringWithFormat:@"%@ ",[dict3 objectForKey:@"percent"]];
+        MajorName3Lbl.text =[NSString stringWithFormat:@"%@ ",[dict3 objectForKey:@"percent"]];
+        
+        PercentMajor4Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        MajorName1Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        
+        PercentMajor1Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        MajorName1Lbl.text =[NSString stringWithFormat:@"%@ ",[dict1 objectForKey:@"percent"]];
+        
+        
     }];
 }
 
@@ -314,4 +373,12 @@
 
 
 
+- (IBAction)PonceBtn:(id)sender {
+}
+
+- (IBAction)SanJuanBtn:(id)sender {
+}
+
+- (IBAction)MayaguezBtn:(id)sender {
+}
 @end

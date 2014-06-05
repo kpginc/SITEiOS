@@ -62,7 +62,7 @@
         <scene sceneID="Owd-Iw-38A">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="uvH-IJ-4wC" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="nh1-7N-OhB">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -114,6 +114,9 @@
                                 <state key="normal" backgroundImage="mayaguez.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="MayaguezBtn:" destination="hyy-b1-64Z" eventType="touchUpInside" id="Lws-T8-SVo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N71-xo-Yp0">
                                 <rect key="frame" x="293" y="306" width="52" height="70"/>
@@ -121,6 +124,9 @@
                                 <state key="normal" backgroundImage="Ponce.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="PonceBtn:" destination="hyy-b1-64Z" eventType="touchUpInside" id="Dck-ju-lmy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei3-O9-ksN">
                                 <rect key="frame" x="475" y="201" width="49" height="55"/>
@@ -128,6 +134,9 @@
                                 <state key="normal" backgroundImage="San-Juan.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="SanJuanBtn:" destination="hyy-b1-64Z" eventType="touchUpInside" id="f8L-E4-UsL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pueblo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-7s-kdi">
                                 <rect key="frame" x="36" y="415" width="59" height="21"/>
@@ -329,6 +338,24 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="MHo-Mi-hiS"/>
+                    <connections>
+                        <outlet property="CampusNameLbl" destination="F1K-tq-1ST" id="Iaw-xr-XzR"/>
+                        <outlet property="FemalePercentageLbl" destination="CCm-iv-cuL" id="23g-Sa-Z0N"/>
+                        <outlet property="MajorName1Lbl" destination="bO3-BL-aSH" id="Hla-ic-isI"/>
+                        <outlet property="MajorName2Lbl" destination="Wlv-pH-U5l" id="T7Z-CX-UBX"/>
+                        <outlet property="MajorName3Lbl" destination="hlX-EB-d8s" id="zYz-FS-adE"/>
+                        <outlet property="MajorName4Lbl" destination="IiH-PH-R8G" id="NKN-Hd-laU"/>
+                        <outlet property="MajorName5Lbl" destination="z5A-af-j3s" id="gRM-T3-Lws"/>
+                        <outlet property="MajorName6Lbl" destination="ebi-vP-6Lb" id="7E7-2w-IjN"/>
+                        <outlet property="MalePercentageLbl" destination="qIL-mH-vu1" id="ro5-e7-fl1"/>
+                        <outlet property="PercentMajor1Lbl" destination="j4x-Qc-M9W" id="jQj-2p-maL"/>
+                        <outlet property="PercentMajor2Lbl" destination="rvd-L1-Pcz" id="4Uo-ma-Yo7"/>
+                        <outlet property="PercentMajor3Lbl" destination="6NR-b4-SD6" id="qze-Vy-6Fe"/>
+                        <outlet property="PercentMajor4Lbl" destination="7XI-2D-5kY" id="VIe-ec-Osv"/>
+                        <outlet property="PercentMajor5Lbl" destination="NRv-d7-PVX" id="aDg-kN-hgt"/>
+                        <outlet property="PercentMajor6Lbl" destination="lHi-86-1EA" id="pGY-9M-mBG"/>
+                        <outlet property="PuebloLbl" destination="aN1-wv-M3T" id="P9d-tn-ejo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbx-in-4sF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
